@@ -1,0 +1,115 @@
+.header-wrapper {
+  position: relative; /* To position child elements */
+  height: 100vh; /* Adjust height as needed */
+  background-image: url("@assets/Background-img.jpeg"); /* Set the background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Center content horizontally */
+  color: white; /* Adjust text color for visibility */
+  padding: 20px; /* Add padding for inner spacing */
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start;
+  width: 60%;
+  margin-top: 0 !important;
+}
+
+.title h1 {
+  font-size: 90px;
+  margin: 0; /* Reset default margin */
+  margin-bottom: 80px;
+  color: var(--brand-white);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.para h6 {
+  margin: 0; /* Reset default margin */
+  margin-bottom: 30px; /* Add spacing between paragraph and button */
+  width: 45%;
+  margin-left: 10px;
+}
+
+.header-wrapper .btn {
+  padding: 10px 20px; /* Adjust button padding */
+  display: flex; /* Flexbox to align icon */
+  align-items: center; /* Center icon vertically */
+  margin-left: 10px;
+}
+
+.header-wrapper .box-out {
+  border: 2px solid grey;
+  color: var(--brand-white);
+  padding: 12px 25px; /* Increased padding for button */
+  border-radius: 30px;
+  display: flex; /* Use flex to align icon and text */
+  align-items: center; /* Center align icon and text */
+}
+
+.box-out .svg-inline--fa{
+    margin-left: 10px;
+}
+
+/* Media Queries for Tablet and Mobile View */
+
+/* Tablet View (Between 576px and 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .content {
+      width: 80%;
+    }
+  
+    .title h1 {
+      font-size: 80px;
+      margin-bottom: 40px;
+    }
+  
+    .para h6 {
+      width: 63%;
+      margin-left: 0;
+    }
+  
+    .header-wrapper .btn {
+      margin-left: 0;
+    }
+  
+    .header-wrapper .box-out {
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 576px) {
+    .header-wrapper {
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .content {
+      width: 100%;
+    }
+  
+    .title h1 {
+      font-size: 44px;
+      margin-bottom: 50px;
+    }
+  
+    .para h6 {
+      width: 70%;
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+  
+    .header-wrapper .btn {
+      padding: 8px 16px; /* Adjust button padding */
+      margin-left: 0px;
+    }
+  
+    .header-wrapper .box-out {
+      padding: 8px 15px; /* Adjust button padding */
+    }
+  }

@@ -7,7 +7,9 @@
 
 /* Navbar Brand */
 .navbar-brand {
-  color: var(--brand-white) !important; /* Ensures visibility of the brand name */
+  color: var(
+    --brand-white
+  ) !important; /* Ensures visibility of the brand name */
   font-size: 40px;
   font-weight: bold;
 }
@@ -94,7 +96,6 @@
     justify-content: center; /* Center text horizontally */
     align-items: center; /* Center text vertically */
     margin-top: 10px;
-    
   }
 
   .navbar-nav .nav-item {
@@ -113,7 +114,7 @@
     align-items: center; /* Center text vertically */
     width: 30%; /* Full width button */
     padding: 10px; /* Adjust padding */
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 10px;
   }
 
@@ -125,7 +126,6 @@
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
-
 }
 
 /* Mobile View */
