@@ -12,6 +12,7 @@
   ) !important; /* Ensures visibility of the brand name */
   font-size: 40px;
   font-weight: bold;
+  margin-left: 50px;
 }
 
 .navbar-brand:hover {
@@ -63,6 +64,10 @@
 }
 
 /* Button styling */
+.d-flex{
+    margin-right: 40px;
+}
+
 .btn-outline {
   border-color: var(--brand-blue);
   background-color: var(--brand-blue);

@@ -1,0 +1,112 @@
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .left-side {
+    width: 45%;
+    margin-left: 50px;
+  }
+
+  .left-side h1{
+    font-size: 60px;
+  }
+  
+  .right-side {
+    width: 45%;
+    margin-right: 40px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    width: 46%;
+    margin-left: 0;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%;
+    background-color: transparent; /* Circle background color */
+    color: white; /* Icon color */
+    transition: background-color 0.3s;
+    border: 1px solid grey;
+  }
+  
+  .icon:hover {
+    background-color: #0056b3; /* Hover color */
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    margin-top: 55px;
+  }
+  
+  .contact-info p {
+    margin: 24px 0; /* Adjust spacing */
+  }
+  
+  .contact-info svg {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  .input-row {
+    margin-bottom: 15px;
+    position: relative; /* To position the pseudo-elements */
+  }
+  
+  .required {
+    color: red; /* Red color for the asterisk */
+    margin-left: 5px; /* Space between label and asterisk */
+  }
+
+  input, textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #555555;
+    outline: none;
+    background: transparent;
+    color: white; /* Text color */
+  font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #999; /* Placeholder color */
+    font-style: italic; /* Italic style for placeholder */
+  }
+  
+  input:focus, textarea:focus {
+    border-bottom: 2px solid #0056b3; /* Change bottom border color on focus */
+  }
+
+  .right-side .d-flex{
+     margin-left: -10px;
+  }
+  .right-side .btn {
+    padding: 10px 20px; /* Adjust button padding */
+    display: flex; /* Flexbox to align icon */
+    align-items: center; /* Center icon vertically */
+    margin-left: 10px;
+  }
+  
+  .right-side .box-out {
+    border: 2px solid grey;
+    color: var(--brand-white);
+    padding: 12px 25px; /* Increased padding for button */
+    border-radius: 30px;
+    display: flex; /* Use flex to align icon and text */
+    align-items: center; /* Center align icon and text */
+    margin-top: 20px;
+  }
+  
+  .box-out .svg-inline--fa{
+      margin-left: 10px;
+  }
+  
+  
