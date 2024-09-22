@@ -1,0 +1,172 @@
+/* Transparent Navbar */
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none;
+  z-index: 1; /* Ensure it's above content but allows background visibility */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  color: var(--brand-white) !important; /* Ensures visibility of the brand name */
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+  color: var(--brand-blue-2) !important; /* Keeps the color the same on hover */
+}
+
+/* Capsule Wrapper for Navbar Links */
+.navbar-nav {
+  background-color: transparent; /* Change to your desired background */
+  border: 2px solid var(--brand-grey); /* Capsule border */
+  border-radius: 50px; /* Creates the capsule shape */
+  padding: 5px 15px; /* Adds space inside the capsule */
+  display: flex; /* Ensures the nav items are aligned properly */
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  margin-left: 20px;
+}
+
+/* Capsule Styled Nav Items */
+.navbar-nav .nav-link {
+  margin-right: 30px;
+  padding: 10px 40px;
+  color: var(--brand-white);
+  font-size: 18px;
+  border-radius: 30px; /* Creates capsule shape */
+  position: relative;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Active Nav Item */
+.navbar-nav .nav-link.active {
+  background-color: var(--brand-grey);
+  color: var(--brand-white); /* Text color when active */
+}
+
+/* Hover Effect for Nav Items */
+.navbar-nav .nav-link:hover {
+  background-color: var(--brand-grey);
+  color: var(--brand-white); /* Text color on hover */
+}
+
+/* Remove default link underline on hover */
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  visibility: hidden;
+}
+
+/* Button styling */
+.btn-outline {
+  border-color: var(--brand-blue);
+  background-color: var(--brand-blue);
+  color: var(--brand-white);
+  padding: 12px 25px; /* Increased padding for button */
+  border-radius: 30px;
+  display: flex; /* Use flex to align icon and text */
+  align-items: center; /* Center align icon and text */
+}
+
+.btn-outline .svg-inline--fa {
+  /* By using the class .svg-inline--fa, you're targeting only FontAwesome icons rendered inline. This ensures that your margin styles apply specifically to those icons without affecting other elements. */
+  margin-left: 10px; /* Add some space between the text and the icon */
+}
+
+.btn-outline:hover {
+  background-color: var(--brand-blue-2);
+}
+
+/* Media Queries for Tablet and Mobile View */
+
+/* Tablet View (Between 576px and 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .navbar-brand {
+    font-size: 30px; /* Adjust brand size */
+  }
+
+  .navbar-nav {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: row; /* Stack nav items vertically */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    margin-top: 10px;
+    
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0;
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add space between items */
+    margin-top: 8px;
+  }
+
+  .btn-outline {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 30%; /* Full width button */
+    padding: 10px; /* Adjust padding */
+    margin:0 auto;
+    margin-top: 10px;
+  }
+
+  .navbar-toggler {
+    border-color: white; /* Set background color to white */
+  }
+
+  /* Change the color of the toggler icon (hamburger) */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 24px; /* Further adjust brand size */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px; /* Decrease font size for nav items */
+    padding: 8px 15px; /* Adjust padding */
+    width: 100%; /* Make each link take full width */
+    text-align: center; /* Center text inside each link */
+  }
+
+  .btn-outline {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    font-size: 14px; /* Decrease button font size */
+    padding: 8px; /* Adjust padding */
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    margin-left: 0; /* Center the navbar links */
+    margin-top: 10px;
+    text-align: center; /* Center the links */
+    display: flex;
+    flex-direction: column; /* Stack nav items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+
+  .navbar-toggler {
+    border-color: white; /* Set background color to white */
+  }
+
+  /* Change the color of the toggler icon (hamburger) */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+}
