@@ -1,0 +1,148 @@
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 100px;
+  margin-top: 60px;
+}
+
+.about-left,
+.about-right {
+  width: 48%; /* Adjust width to control the size of each section */
+}
+
+.about-left ul {
+  margin-bottom: 20px; /* Space between ul and capsule */
+  margin-left: 40px;
+}
+
+.quest {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.capsule {
+    width: 287px;
+    height: 102px;
+    background-color: blue;
+    border-radius: 50px;
+    margin-left: 56px;
+    margin-top: 30px;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.desc {
+  font-size: 25px;
+  margin-bottom: 37px; /* Space between text and button */
+  margin-right: 40px;
+}
+
+.about-right .desc .desc-clr{
+    color: var(--brand-grey-2);
+}
+
+.about-right .d-flex{
+    margin-left: -12px;
+}
+
+.about-right .btn {
+  padding: 10px 20px; /* Adjust button padding */
+  display: flex; /* Flexbox to align icon */
+  align-items: center; /* Center icon vertically */
+  margin-left: 10px;
+  border-color: var(--brand-blue-2);
+  background-color: var(--brand-blue-2);
+}
+
+.about-right .btn:hover {
+  background-color: var(--brand-blue);
+}
+
+.about-right .box-out {
+  color: var(--brand-white);
+  padding: 12px 25px; /* Increased padding for button */
+  border-radius: 30px;
+  display: flex; /* Use flex to align icon and text */
+  align-items: center; /* Center align icon and text */
+}
+
+.box-out .svg-inline--fa {
+  margin-left: 10px;
+}
+
+/* Media Queries for Tablet and Mobile */
+
+
+/* Tablet View (Between 576px and 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .about-wrapper {
+      flex-direction: row; /* Stack containers */
+      align-items: center; /* Center content */
+    }
+  
+    .about-left,
+    .about-right {
+      width: 100%; /* Full width for mobile view */
+      margin-bottom: 20px; /* Space between stacked sections */
+    }
+    
+    .about-left ul{
+        margin-top: -15px;
+        margin-left: -10px;
+     }
+
+    .quest {
+      font-size: 18px; /* Slightly smaller font */
+    }
+  
+    .capsule {
+        width: 74%;
+        margin: 37px auto;
+        margin-left: 19px;
+    }
+  
+    .desc {
+      font-size: 20px; /* Slightly smaller font */
+    }
+  
+    .about-right .btn {
+      width: 49%; /* Full width button */
+    }
+  }
+  
+  /* mobile view */
+  @media (max-width: 576px) {
+    .quest {
+      font-size: 16px; /* Further reduce font size */
+    }
+
+    .about-left ul{
+       margin-left: -16px;
+    }
+  
+    .desc {
+      font-size: 18px; /* Further reduce font size */
+      margin-top: 180px;
+      margin-left: -133px;
+      width: 178%;
+    }
+  
+    .capsule {
+        height: 92px;
+        width: 222px;
+        margin-left: 20px;
+    }
+  
+    .about-right .btn {
+      padding: 10px; /* Adjust button padding */
+    }
+
+    .about-right .d-flex{
+        margin-left: -142px;
+    }
+  }
