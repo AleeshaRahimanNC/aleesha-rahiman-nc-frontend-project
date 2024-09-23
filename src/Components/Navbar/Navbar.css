@@ -92,7 +92,8 @@
 /* Tablet View (Between 576px and 768px) */
 @media (min-width: 576px) and (max-width: 768px) {
   .navbar-brand {
-    font-size: 30px; /* Adjust brand size */
+    font-size: 34px; /* Adjust brand size */
+    margin-left: 1vw;
   }
 
   .navbar-nav {
@@ -136,7 +137,8 @@
 /* Mobile View */
 @media (max-width: 576px) {
   .navbar-brand {
-    font-size: 24px; /* Further adjust brand size */
+    font-size: 29px; /* Further adjust brand size */
+    margin-left: 1vw;
   }
 
   .navbar-nav .nav-link {

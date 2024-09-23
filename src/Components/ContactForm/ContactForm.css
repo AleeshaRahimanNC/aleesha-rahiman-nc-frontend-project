@@ -1,112 +1,262 @@
 .contact-form {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .left-side {
-    width: 45%;
-    margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-side {
+  width: 45%;
+  margin-left: 50px;
+}
+
+.left-side h1 {
+  font-size: 60px;
+}
+
+.right-side {
+  width: 45%;
+  margin-right: 40px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  width: 46%;
+  margin-left: 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-color: transparent; /* Circle background color */
+  color: white; /* Icon color */
+  transition: background-color 0.3s;
+  border: 1px solid grey;
+}
+
+.icon:hover {
+  background-color: #0056b3; /* Hover color */
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-top: 55px;
+}
+
+.contact-info p {
+  margin: 24px 0; /* Adjust spacing */
+}
+
+.contact-info svg {
+  margin-right: 8px; /* Space between icon and text */
+}
+.input-row {
+  margin-bottom: 15px;
+  position: relative; /* To position the pseudo-elements */
+}
+
+.required {
+  color: red; /* Red color for the asterisk */
+  margin-left: 5px; /* Space between label and asterisk */
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #555555;
+  outline: none;
+  background: transparent;
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999; /* Placeholder color */
+  font-style: italic; /* Italic style for placeholder */
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid #0056b3; /* Change bottom border color on focus */
+}
+
+.right-side .d-flex {
+  margin-left: -10px;
+}
+.right-side .btn {
+  padding: 10px 20px; /* Adjust button padding */
+  display: flex; /* Flexbox to align icon */
+  align-items: center; /* Center icon vertically */
+  margin-left: 10px;
+}
+
+.right-side .box-out {
+  border: 2px solid grey;
+  color: var(--brand-white);
+  padding: 12px 25px; /* Increased padding for button */
+  border-radius: 30px;
+  display: flex; /* Use flex to align icon and text */
+  align-items: center; /* Center align icon and text */
+  margin-top: 20px;
+}
+
+.box-out .svg-inline--fa {
+  margin-left: 10px;
+}
+
+/* Tablet View (Between 576px and 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    padding: 10px; /* Reduced padding */
   }
 
-  .left-side h1{
-    font-size: 60px;
+  .contact-info .mailId {
+    margin-right: 15px;
   }
-  
+
+  .left-side,
   .right-side {
-    width: 45%;
-    margin-right: 40px;
+    width: 100%; /* Full width for both sides */
+    margin: 0; /* Remove margins */
+    padding: 10px 0; /* Optional padding */
   }
-  
-  .icons {
+
+  .left-side h1 {
+    font-size: 40px; /* Smaller heading size */
+    margin-left: 120px;
+  }
+
+  .right-side {
+    margin-left: 110px;
+    width: 69%;
+  }
+
+  .right-side .d-flex {
+    /* margin-left: 42px; */
+    width: 100%; /* Full width for the button container */
     display: flex;
-    justify-content: space-around;
-    margin: 30px 0;
-    width: 46%;
-    margin-left: 0;
+    justify-content: center; /* Center the button horizontally */
+  }
+
+  .icons {
+    width: 80%; /* Adjust icon width */
+    margin-left: 65px;
   }
 
   .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
-    border-radius: 50%;
-    background-color: transparent; /* Circle background color */
-    color: white; /* Icon color */
-    transition: background-color 0.3s;
-    border: 1px solid grey;
+    width: 35px; /* Smaller icon size */
+    height: 35px; /* Smaller icon size */
   }
-  
-  .icon:hover {
-    background-color: #0056b3; /* Hover color */
-    cursor: pointer;
-  }
-  
+
   .contact-info {
-    margin-top: 55px;
-  }
-  
-  .contact-info p {
-    margin: 24px 0; /* Adjust spacing */
-  }
-  
-  .contact-info svg {
-    margin-right: 8px; /* Space between icon and text */
-  }
-  .input-row {
-    margin-bottom: 15px;
-    position: relative; /* To position the pseudo-elements */
-  }
-  
-  .required {
-    color: red; /* Red color for the asterisk */
-    margin-left: 5px; /* Space between label and asterisk */
+    margin-top: 30px; /* Adjust margin */
+    /* margin-left: 120px; */
+    display: flex;
+    justify-content: space-around;
   }
 
-  input, textarea {
-    width: 100%;
-    border: none;
-    padding: 10px 0;
-    border-bottom: 1px solid #555555;
-    outline: none;
-    background: transparent;
-    color: white; /* Text color */
-  font-size: 16px; /* Adjust font size as needed */
-  }
-  
-  input::placeholder, textarea::placeholder {
-    color: #999; /* Placeholder color */
-    font-style: italic; /* Italic style for placeholder */
-  }
-  
-  input:focus, textarea:focus {
-    border-bottom: 2px solid #0056b3; /* Change bottom border color on focus */
+  input,
+  textarea {
+    font-size: 14px; /* Smaller font size */
   }
 
-  .right-side .d-flex{
-     margin-left: -10px;
-  }
-  .right-side .btn {
-    padding: 10px 20px; /* Adjust button padding */
-    display: flex; /* Flexbox to align icon */
-    align-items: center; /* Center icon vertically */
-    margin-left: 10px;
-  }
-  
+  .right-side .btn,
   .right-side .box-out {
-    border: 2px solid grey;
-    color: var(--brand-white);
-    padding: 12px 25px; /* Increased padding for button */
-    border-radius: 30px;
-    display: flex; /* Use flex to align icon and text */
-    align-items: center; /* Center align icon and text */
-    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the text inside the button */
+    align-items: center; /* Vertically center the text inside the button */
+    width: 25%; /* Full width for buttons */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Space between buttons */
   }
-  
-  .box-out .svg-inline--fa{
-      margin-left: 10px;
+}
+
+/* Mobile view */
+@media (max-width: 576px) {
+  .contact-form {
+    flex-direction: column;
+    padding: 5px; /* Reduced padding for smaller screens */
   }
-  
-  
+
+  .left-side,
+  .right-side {
+    width: 100%; /* Full width for both sides */
+    margin: 0; /* Remove margins */
+    padding: 10px 0; /* Optional padding */
+  }
+
+  .left-side h1 {
+    font-size: 30px; /* Smaller heading size */
+    text-align: center;
+  }
+
+  .contact-info {
+    margin-top: 20px; /* Adjust margin */
+    display: flex;
+    justify-content: space-around; /* Keep contact info organized */
+    flex-direction: column; /* Stack phone and email vertically */
+    align-items: center; /* Center content */
+  }
+
+  .contact-info p {
+    margin: 8px 0; /* Less spacing */
+  }
+
+  .right-side {
+    margin-left: 23px; /* Reset left margin */
+    width: 85%; /* Adjust width to fit mobile screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+  }
+
+  .right-side .d-flex {
+    width: 100%; /* Full width for the button container */
+    justify-content: center;
+    margin-left: 40px;
+  }
+
+  .input-row {
+    margin-bottom: 8px; /* Less bottom margin */
+    width: 100%; /* Full width for input fields */
+  }
+
+  input,
+  textarea {
+    font-size: 12px; /* Smaller font size */
+    width: 100%; /* Full width for input and textarea */
+  }
+
+  .icon {
+    width: 30px; /* Further reduce icon size */
+    height: 30px; /* Further reduce icon size*/
+    margin: 4px 14px;
+    padding: 10px;
+  }
+
+  .icons {
+    flex-direction: row; /* Keep icons in a row */
+    justify-content: center; /* Center icons */
+    margin: 10px 75px; /* Adjust margin for better spacing */
+    margin-left: 80px;
+  }
+
+  .right-side .btn,
+  .right-side .box-out {
+    display: flex;
+    justify-content: center; /* Center the text inside the button */
+    align-items: center; /* Vertically center the text inside the button */
+    width: 50%; /* Adjust button width for mobile screens */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Space between buttons */
+  }
+}

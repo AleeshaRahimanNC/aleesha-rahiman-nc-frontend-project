@@ -33,10 +33,10 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="contact-info">
-          <p>
+          <p className="phoneNo">
             <FontAwesomeIcon icon={faPhone} /> 0972 663 633
           </p>
-          <p>
+          <p className="mailId">
             {" "}
             <FontAwesomeIcon icon={faEnvelope} /> hello@wefo.com
           </p>
