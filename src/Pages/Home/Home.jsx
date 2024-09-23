@@ -7,6 +7,7 @@ import ContactForm from '../../Components/ContactForm/ContactForm'
 import AboutUs from '../../Components/AboutUs/AboutUs'
 import Testimonials from '../../Components/Testimonials/Testimonials'
 import Strip from '../../Components/Strip/Strip'
+import Services from '../../Components/Services/Services'
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
     <Header/>
     <AboutUs/>
     <Strip/>
+    <Services/>
     <Testimonials/>
     <ContactForm/>
     <Footer/>
