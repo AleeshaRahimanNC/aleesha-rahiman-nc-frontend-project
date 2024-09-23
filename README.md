@@ -14,6 +14,7 @@ The `src` folder contains the following structure:
   - `Footer`: Contains the footer layout.
   - `Header`: Contains the header layout.
   - `Navbar`: Handles navigation bar functionality.
+  - `Services`: Contains the services we provide.
   - `Strip`: A strip layout for banners.
   - `Testimonials`: Displays customer testimonials.
   - `Routing.jsx`: Defines routing between different pages.
