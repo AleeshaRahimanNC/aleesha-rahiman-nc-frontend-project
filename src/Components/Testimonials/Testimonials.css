@@ -1,0 +1,213 @@
+.testimonials-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 70px;
+  margin-top: 60px;
+  position: relative; /* Needed for gradient positioning */
+  background: linear-gradient(
+   35deg, 
+    rgba(0, 0, 139, 0.9) 0%,    /* Dark blue at the top-left */
+    rgba(0, 0, 139, 0.5) 40%,   /* Slightly lighter blue */
+    rgba(0, 0, 0, 0.6) 70%,     /* Transitioning to black */
+    rgba(0, 0, 0, 0.9) 100%     /* Darker black at the bottom-right */
+  );
+}
+
+.testimonials-left,
+.testimonials-right {
+  width: 48%;
+  position: relative;
+  z-index: 1; /* Ensures content is above the background gradient */
+}
+
+.testimonials-left ul {
+  margin-bottom: 20px; /* Space between ul and capsule */
+  margin-left: 40px;
+}
+
+.test {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.testimonials-right {
+  display: flex;
+  flex-direction: column;
+  margin-top: -6px;
+}
+
+.test-desc {
+  font-size: 25px;
+  margin-bottom: 5px; /* Space between text and button */
+  margin-right: 40px;
+}
+
+
+/* New styles for the employee info section */
+.employee-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.employee-icon {
+  font-size: 30px;
+  margin-right: 10px;
+  border: 3px solid gray;
+  border-radius: 70%; /* Makes the icon background circular */
+  padding: 10px; /* Adds space around the icon */
+  width: 50px; /* Sets a fixed width for the circle */
+  height: 50px; /* Sets a fixed height for the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.employee-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.employee-designation {
+  font-size: 16px;
+  color: grey;
+}
+
+/* Styles for the arrow controls */
+.arrow-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: -468px;
+  }
+  
+  .arrow-icon {
+    font-size: 30px;
+    margin: 0 10px; /* Space between arrows */
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .arrow-icon:hover {
+    background-color: var(--brand-blue); /* Change background color on hover */
+  }
+
+  /* Tablet View (Between 576px and 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .testimonials-wrapper {
+      flex-direction: column;
+      padding: 15px; /* Adjust padding */
+    }
+  
+    .testimonials-left,
+    .testimonials-right {
+      width: 100%; /* Full width for mobile */
+      margin-top: 20px; /* Add spacing between sections */
+    }
+  
+    .testimonials-left ul{
+        margin-left: 0;
+    }
+    
+    .testimonials-right {
+      margin-top: 0; /* Reset top margin */
+    }
+
+    .test-desc{
+        margin-left: 34px;
+    }
+  
+    .employee-info {
+      flex-direction: row; /* Stack icon and text vertically */
+      align-items: flex-start; /* Align items to the start */
+      margin-left: 31px;
+    }
+  
+    .employee-icon {
+      margin-bottom: 10px; /* Space below icon */
+    }
+
+    .employee-name{
+        margin-top: 0;
+    }
+  
+    .arrow-controls {
+      margin-left: 0; /* Center arrow controls */
+    }
+  }
+  
+  /* Mobile View (max-width: 576px) */
+@media (max-width: 576px) {
+    .testimonials-wrapper {
+        padding: 10px; /* Less padding for mobile */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials-left,
+    .testimonials-right {
+        width: 100%; /* Full width for mobile */
+        margin-top: 15px; /* Add spacing between sections */
+    }
+
+    .testimonials-left ul {
+        margin-left: 0; /* No margin for ul */
+    }
+
+    .test {
+        font-size: 16px; /* Smaller text for mobile */
+    }
+
+    .test-desc {
+        font-size: 18px; /* Smaller description text */
+        margin-left: 20px; /* Adjust left margin */
+    }
+
+    .employee-info {
+        flex-direction: row; /* Stack icon and text vertically */
+        align-items: center; /* Center items */
+        margin-left: 0; /* No margin for mobile */
+        text-align: center; /* Center text */
+    }
+
+    .employee-icon {
+        margin-bottom: 10px; /* Space below icon */
+        width: 40px; /* Smaller icon size */
+        height: 40px; /* Smaller icon size */
+        margin-left: 19px;
+    }
+
+    .employee-name {
+        font-size: 14px; /* Smaller name */
+        margin-top: 5px; /* Adjust top margin */
+        margin-left: -32px;
+    }
+
+    .employee-designation {
+        font-size: 12px; /* Smaller designation */
+    }
+
+    .arrow-controls {
+        margin-top: 20px; /* Add space above controls */
+        justify-content: center; /* Center controls */
+        margin-left: -5px;
+    }
+
+    .arrow-icon {
+        font-size: 24px; /* Smaller arrow icons */
+        width: 40px; /* Smaller button */
+        height: 40px; /* Smaller button */
+        margin: 0 5px; /* Less space between arrows */
+    }
+}

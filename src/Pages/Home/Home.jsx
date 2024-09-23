@@ -5,6 +5,8 @@ import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import ContactForm from '../../Components/ContactForm/ContactForm'
 import AboutUs from '../../Components/AboutUs/AboutUs'
+import Testimonials from '../../Components/Testimonials/Testimonials'
+
 
 
 
@@ -14,6 +16,7 @@ function Home() {
     <Navbar/>
     <Header/>
     <AboutUs/>
+    <Testimonials/>
     <ContactForm/>
     <Footer/>
     </>
