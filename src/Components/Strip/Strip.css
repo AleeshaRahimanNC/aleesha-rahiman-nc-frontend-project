@@ -1,0 +1,98 @@
+.crossStrip {
+    position: relative;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.grey-strip, .blue-strip {
+    position: absolute;
+    width: 100%; /* Ensure it covers the full width */
+    height: 60px; /* Adjust height as needed */
+    left: 0; /* Align to the left */
+    z-index: 1;
+}
+
+.grey-strip {
+    background-color: grey;
+    transform: rotate(-3deg); /* Adjust angle as needed */
+}
+
+.blue-strip {
+    background-color: blue;
+    transform: rotate(3deg); /* Opposite angle */
+    z-index: 2;
+}
+
+.text {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%) rotate(3deg); /* Incline to match grey strip */
+    font-weight: bold;
+    font-size: 28px; /* Increase font size */
+    color: white; /* Change color as needed */
+    z-index: 3;
+    white-space: nowrap; /* Prevent wrapping */
+    
+}
+
+.repeating-text {
+    display: inline-block; /* Ensure it respects width */
+    margin-left: 80px; /* Add some padding for better spacing */
+    
+}
+/* New class for grey strip text */
+.grey-text {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%) rotate(-3deg); /* Incline to match grey strip */
+    font-weight: bold;
+    font-size: 28px; /* Increase font size */
+    color: var(--brand-grey-2); /* Change color as needed */
+    z-index: 1;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Tablet View (Between 576px and 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .crossStrip {
+        height: 150px; /* Adjust height */
+        margin-bottom: 100px; /* Adjust margin */
+    }
+
+    .grey-strip, .blue-strip {
+        height: 50px; /* Adjust height */
+    }
+
+    .text, .grey-text {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .repeating-text {
+        margin-left: 40px; /* Adjust spacing */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 576px) {
+    .crossStrip {
+        height: 100px; /* Adjust height */
+        margin-bottom: 50px; /* Adjust margin */
+    }
+
+    .grey-strip, .blue-strip {
+        height: 40px; /* Adjust height */
+    }
+
+    .text, .grey-text {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .repeating-text {
+        margin-left: 20px; /* Adjust spacing */
+    }
+}

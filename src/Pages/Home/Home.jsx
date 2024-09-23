@@ -6,8 +6,7 @@ import Footer from '../../Components/Footer/Footer'
 import ContactForm from '../../Components/ContactForm/ContactForm'
 import AboutUs from '../../Components/AboutUs/AboutUs'
 import Testimonials from '../../Components/Testimonials/Testimonials'
-
-
+import Strip from '../../Components/Strip/Strip'
 
 
 function Home() {
@@ -16,6 +15,7 @@ function Home() {
     <Navbar/>
     <Header/>
     <AboutUs/>
+    <Strip/>
     <Testimonials/>
     <ContactForm/>
     <Footer/>
